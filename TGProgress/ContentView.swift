@@ -17,11 +17,11 @@ struct ContentView: View {
     @State private var timer:Timer? = nil
     
     var body: some View {
-        GeometryReader { geo in
-            VStack {
+        VStack {
+            GeometryReader { geo in
                 ZStack {
                     LinearGradient(gradient: Gradient(colors: colors), startPoint: .leading, endPoint: .trailing)
-                        .frame(width: geo.frame(in: CoordinateSpace.local).width - 32,  height: 10)
+                        .frame(width: geo.frame(in: CoordinateSpace.local).width,  height: 10)
                         .cornerRadius(5.0)
                     HStack() {
                         ForEach(0..<segmentCount) {_ in
@@ -36,17 +36,18 @@ struct ContentView: View {
                     }
                     .frame(width: geo.frame(in: CoordinateSpace.local).width * 2)
                 }
-                .frame(width: geo.frame(in: CoordinateSpace.local).width - 32)
+                .frame(width: geo.frame(in: CoordinateSpace.local).width)
                 .clipped()
-            
+                .onAppear(perform: {
+                    self.resetValue = (geo.frame(in: CoordinateSpace.local).width * 2)
+                    xOffset = -resetValue
+                    timer = statAnimation()
+                })
             }
-            .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
-            .onAppear(perform: {
-                self.resetValue = (geo.frame(in: CoordinateSpace.local).width * 2)
-                xOffset = -resetValue
-                timer = statAnimation()
-            })
+            
         }
+        .frame(height: 10)
+        .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
     }
     
     @discardableResult
@@ -59,7 +60,7 @@ struct ContentView: View {
             }
         }
         
-       return Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: update(_:))
+       return Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true, block: update(_:))
     }
     
     func stopAnimation() {
