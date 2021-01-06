@@ -11,7 +11,7 @@
 		1AC47EBE25A5E6A8001F1729 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC47EBD25A5E6A8001F1729 /* ContentView.swift */; };
 		1AC47EC025A5E6A9001F1729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC47EBF25A5E6A9001F1729 /* Assets.xcassets */; };
 		1AC47EC325A5E6A9001F1729 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC47EC225A5E6A9001F1729 /* Preview Assets.xcassets */; };
-		424A3C6D25A60AEF001A54D6 /* pp.mov in Resources */ = {isa = PBXBuildFile; fileRef = 424A3C6C25A60AEF001A54D6 /* pp.mov */; };
+		424A3C7025A60BB1001A54D6 /* pp.gif in Resources */ = {isa = PBXBuildFile; fileRef = 424A3C6F25A60BB1001A54D6 /* pp.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +21,7 @@
 		1AC47EBF25A5E6A9001F1729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AC47EC225A5E6A9001F1729 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1AC47EC425A5E6A9001F1729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		424A3C6C25A60AEF001A54D6 /* pp.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = pp.mov; sourceTree = "<group>"; };
+		424A3C6F25A60BB1001A54D6 /* pp.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pp.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 				1AC47EBB25A5E6A8001F1729 /* TGProgressApp.swift */,
 				1AC47EBD25A5E6A8001F1729 /* ContentView.swift */,
 				1AC47EBF25A5E6A9001F1729 /* Assets.xcassets */,
-				424A3C6C25A60AEF001A54D6 /* pp.mov */,
+				424A3C6F25A60BB1001A54D6 /* pp.gif */,
 				1AC47EC425A5E6A9001F1729 /* Info.plist */,
 				1AC47EC125A5E6A9001F1729 /* Preview Content */,
 			);
@@ -130,8 +130,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AC47EC325A5E6A9001F1729 /* Preview Assets.xcassets in Resources */,
+				424A3C7025A60BB1001A54D6 /* pp.gif in Resources */,
 				1AC47EC025A5E6A9001F1729 /* Assets.xcassets in Resources */,
-				424A3C6D25A60AEF001A54D6 /* pp.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
